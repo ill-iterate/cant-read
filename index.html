@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./app.css" />
 
     <title>Frontend Mentor | Order summary card</title>
@@ -19,9 +25,11 @@
     <section id="order">
       <div class="container">
         <div class="order-content">
-            <div class="order-content-title-image">
-                <img src="../images/illustration-hero.svg" alt="">
-            </div>
+          <img
+            src="./images/illustration-hero.svg"
+            alt=""
+            class="title-photo"
+          />
           <div class="order-content-title"><h1>Order Summary</h1></div>
           <div class="order-content-summary">
             <p>
@@ -29,9 +37,16 @@
               on any device anywhere you like!
             </p>
           </div>
-          <div class="order-content-plan">Annual Plan $59.99/year Change</div>
-          <div class="order-content-pay">Proceed to Payment</div>
-          <div class="order-content-cancel">Cancel Order</div>
+          <div class="order-content-plan">
+            <img src="../02/images/icon-music.svg" alt="" />
+            <div class="order-content-plan-name">
+              <span id="plan-name">Annual Plan</span>
+              <span id="plan-price">$59.99/year</span>
+            </div>
+            <a href="#" id="change-plan">Change</a>
+          </div>
+          <a href="#" id="pay">Proceed to Payment</a>
+          <a href="#" id="cancel">Cancel Order</a>
         </div>
       </div>
     </section>

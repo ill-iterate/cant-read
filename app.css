@@ -128,3 +128,25 @@ body {
 #cancel:hover {
   color: hsl(224, 44%, 55%);
 }
+
+@media screen and (max-width: 700px) {
+  #order {
+    background: left 0% / 100% 50% no-repeat
+      url(images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+  }
+  .order-content {
+    zoom: 0.75;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #order {
+    background: left 0% / 100% 50% no-repeat
+      url(images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+  }
+  .order-content {
+    zoom: 0.5;
+  }
+}

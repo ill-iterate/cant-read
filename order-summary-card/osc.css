@@ -22,7 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   background: left 0% / 100% 50% no-repeat
-    url(../images/pattern-background-desktop.svg);
+    url(/images/pattern-background-desktop.svg);
   background-color: hsl(225, 100%, 94%);
 }
 
@@ -132,7 +132,7 @@ body {
 @media screen and (max-width: 700px) {
   #order {
     background: left 0% / 100% 50% no-repeat
-      url(../images/pattern-background-mobile.svg);
+      url(/images/pattern-background-mobile.svg);
     background-color: hsl(225, 100%, 94%);
   }
   .order-content {
@@ -143,7 +143,7 @@ body {
 @media screen and (max-width: 350px) {
   #order {
     background: left 0% / 100% 50% no-repeat
-      url(../images/pattern-background-mobile.svg);
+      url(/images/pattern-background-mobile.svg);
     background-color: hsl(225, 100%, 94%);
   }
   .order-content {

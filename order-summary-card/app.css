@@ -1,1 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
+#order {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: left 0% / 100% 50% no-repeat
+    url(images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+}
+
+.title-photo {
+  border-radius: 20px 20px 0 0;
+}
+
+.order-content {
+  width: 450px;
+  height: 700px;
+  background: white;
+  border-radius: 20px;
+}
+
+.order-content-title h1 {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 38px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.order-content-summary p {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  margin: 0 50px;
+  line-height: 1.6;
+}
+
+.order-content-plan {
+  display: flex;
+  flex-direction: row;
+  margin: 25px 50px;
+  padding: 25px 25px;
+  background: hsl(225, 100%, 98%);
+  border-radius: 15px;
+}
+
+.order-content-plan img {
+  max-width: 50px;
+  max-height: 50px;
+  flex: 1;
+}
+
+.order-content-plan-name {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin: 0 18px;
+  line-height: 1.7;
+}
+
+#plan-name {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+#plan-price {
+  color: hsl(224, 23%, 55%);
+}
+
+#change-plan {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 14px;
+  margin: auto;
+}
+
+#pay {
+  display: block;
+  color: white;
+  background: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 350px;
+  margin: auto auto;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+  box-shadow: 0px 20px 20px 0px rgba(5, 5, 5, 15%);
+}
+
+#pay:hover {
+  background: hsl(245, 85%, 52%);
+}
+
+#cancel {
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+#cancel:hover {
+  color: hsl(224, 44%, 55%);
+}
+
+@media screen and (max-width: 700px) {
+  #order {
+    background: left 0% / 100% 50% no-repeat
+      url(images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+  }
+  .order-content {
+    zoom: 0.75;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #order {
+    background: left 0% / 100% 50% no-repeat
+      url(images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+  }
+  .order-content {
+    zoom: 0.5;
+  }
+}

@@ -1,1 +1,255 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+html {
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: hsl(238, 29%, 16%);
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  height: 32rem;
+  width: 60rem;
+  border-radius: 2rem;
+}
+
+.container-left {
+  background: left 100% top -151%/ 250% url(../06/images/bg-pattern-desktop.svg);
+  width: 24.2rem;
+  position: relative;
+}
+
+#woman {
+  position: relative;
+  width: 29.5rem;
+  top: 15%;
+  left: -22%;
+  clip-path: inset(0 0 0 18%);
+}
+
+#cube {
+  position: absolute;
+  width: 12rem;
+  top: 41%;
+  left: -24%;
+  z-index: 1;
+}
+
+.container-right {
+  width: 35rem;
+  margin: 4rem 5rem;
+}
+
+.container-right h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem 0 1.125rem 0;
+  font-family: "Kumbh Sans", sans-serif;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  background: white;
+}
+
+.question img {
+  margin: 0.5rem 1.5rem 0 1.5rem;
+}
+
+.question:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.active {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+.arrow {
+  transition: 0.4s;
+}
+
+.answer {
+  background-color: white;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  color: hsl(240, 6%, 50%);
+  font-size: 0.8em;
+  transition: height 0.5s;
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    width: 30rem;
+    height: 42rem;
+  }
+  .container-left {
+    width: 30em;
+    height: 10em;
+    background: left 54% top 105%/ 75% url(../06/images/bg-pattern-desktop.svg) no-repeat;
+  }
+  .container-right {
+    width: 25em;
+    margin: 1.5em 2.5em 4em 2.5em;
+  }
+  .container-right h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .question {
+    width: 25em;
+    margin-right: 0;
+    font-size: 1.1em;
+  }
+  .answer {
+    font-size: 1em;
+  }
+  #woman {
+    width: 22.5em;
+    top: -102%;
+    left: 12.5%;
+    clip-path: none;
+  }
+  #cube {
+    top: -23%;
+    left: 13%;
+    width: 9em;
+  }
+  body {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 9px;
+  }
+}

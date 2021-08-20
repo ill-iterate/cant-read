@@ -112,7 +112,7 @@ body {
 }
 
 .container-left {
-  background: left 100% top -151%/ 250% url(../06/images/bg-pattern-desktop.svg);
+  background: left 100% top -151%/ 250% url(../faq-accordion-card/images/bg-pattern-desktop.svg);
   width: 24.2rem;
   position: relative;
 }
@@ -201,7 +201,7 @@ body {
   .container-left {
     width: 30em;
     height: 10em;
-    background: left 54% top 105%/ 75% url(../06/images/bg-pattern-desktop.svg) no-repeat;
+    background: left 54% top 105%/ 75% url(../faq-accordion-card/images/bg-pattern-desktop.svg) no-repeat;
   }
   .container-right {
     width: 25em;
